@@ -1,4 +1,4 @@
-#require 'sinatra'
+require 'sinatra'
 require 'sendgrid-ruby'
 
 from = SendGrid::Email.new(email: 'Jacklinton@mac.com')
