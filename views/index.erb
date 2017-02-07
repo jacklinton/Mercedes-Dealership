@@ -1,26 +1,29 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
 <head>
-	<title></title>
+	<title>Contact Email Form</title>
 </head>
 <body>
 <form method="POST" action="/">
+		<h2>Send an email to one of our representatives for more information using the form below.</h2>
+		<h4>We thank you for filling out all the fields on this page to ensure a speedy reply from our staff!</h4>
 		<label for="full-name">Full Name</label>
 		<input type="text" name="full-name" id="full-name">
 		<label for="email-addy">Email Address</label>
 		<input type="text" name="email-addy" id="email-addy">
-		<label for="email-addy">Email Address</label>
-		<input type="text" name="email-addy" id="email-addy">
-		<label for="email-addy">Email Address</label>
-		<input type="text" name="email-addy" id="email-addy">
+		<label for="email-addy2">Re-Enter Email For Verification</label>
+		<input type="text" name="email-addy2" id="email-addy2">
+		<label for="phone">Phone Number</label>
+		<input type="text" name="phone" id="phone">
 
-		<textarea rows='50' columns='50'>Add your comments and questions here and a representative will contact you shortly.</textarea>
-		<h4>Prefered method of contact:</h4>
+		<textarea rows='50' columns='50' name="email-body" id="email-body">Add your comments and questions here and a representative will contact you shortly.</textarea>
+		<h4>How would you prefer that we contact you?</h4>
+		<h4>Please check at least one below.</h4>
 		<label for="pref-email">Contact Via Email</label>
 		<input type="checkbox" name="pref-email" id="pref-email">
 		<label for="pref-phone">Contact Via Phone Call</label>
 		<input type="checkbox" name="pref-phone" id="pref-phone">
-		<button type="submit">Go!</button>
+		<button type="submit">Send Email</button>
 	</form>
 </body>
 </html>
