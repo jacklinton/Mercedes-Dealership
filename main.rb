@@ -1,5 +1,6 @@
 require 'sinatra'
 require 'sendgrid-ruby'
+include SendGrid
 
 post '/' do
 
@@ -13,25 +14,25 @@ post '/' do
 	@data_string = [@full_name, @email_addy, @email_addy2, @phone, @email_body]
 	@warning = "You must complete all fields to proceed!"
 
-	 def checker
-	 	@data_string.each do |input|
-	 		if input != nil
-	 	    else
-	# 	    	display warning
-				checker
-			end
-		end
-		checker2
-	end
-	def checker2
-		if @email_addy == @email_addy2
-			sender
-		else
-			#display warning
-			checker2
-		end
-	end
-	def sender
+	#  def checker
+	#  	@data_string.each do |input|
+	#  		if input != nil
+	#  	    else
+	# # 	    	display warning
+	# 			checker
+	# 		end
+	# 	end
+	# 	checker2
+	# end
+	# def checker2
+	# 	if @email_addy == @email_addy2
+	# 		sender
+	# 	else
+	# 		#display warning
+	# 		checker2
+	# 	end
+	# end
+	# def sender
 		from = SendGrid::Email.new(email: @email_addy)
 		subject = 'New customer message from ' + @full_name
 		to = SendGrid::Email.new(email: 'mercedes.sales.and.inquiries@gmail.com') #pw: jackashotsohamjon
@@ -41,7 +42,7 @@ post '/' do
 		response = sg.client.mail._('send').post(request_body: mail.to_json)
 		puts response.status_code
 		puts response.body
-	end
+# 	end
 end
 
 get '/' do
