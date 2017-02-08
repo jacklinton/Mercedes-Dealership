@@ -36,6 +36,7 @@ $("#email-addy2").focusout(function(){
 })
 
 
+
 checkEmail = function() {
 		this.emailArr = emailAddy.value.split("@")
 		this.emailArr1 = this.emailArr[0]				//splits the email up into sections with "@", ".", the first character as dividers. 

@@ -6,7 +6,7 @@ post '/' do
 
 	@full_name = params["full-name"]
 	@email_addy = params["email-addy"]
-	@email_addy2 = params["email-add2"]
+	@email_addy2 = params["email-addy2"]
 	@phone = "Customer phone: " + params["phone"]
 	@email_body = params["email-body"]
 	#@pref_email = params["pref-email"]
@@ -31,13 +31,12 @@ post '/' do
 		response = sg.client.mail._('send').post(request_body: mail.to_json)
 		puts response.status_code
 		puts response.body
+	
 end
 
+
 get '/' do
-
-
-		
-		
+	
 	erb :index
 
 end
