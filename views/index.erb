@@ -11,19 +11,23 @@
 		<ul>
 			<li><label for="full-name">Full Name</label>
 			<input tabfocus="1" type="text" name="full-name" id="full-name"></li>
+			<p id="nameWarning"> </p>
 			<li><label for="email-addy">Email Address</label>
 			<input tabfocus="2" type="text" name="email-addy" id="email-addy"></li>
+			<p id="emailWarning1"> </p>
 			<li><label for="email-addy2">Re-Enter Email For Verification</label>
 			<input tabfocus="3" type="text" name="email-addy2" id="email-addy2"></li>
+			<p id="emailWarning2"> </p>
 			<li><label for="phone">Phone Number</label>
 			<input tabfocus="4" type="text" name="phone" id="phone"></li>
-
+			<p id="phoneWarning"> </p>
 			<li><textarea tabfocus="5" rows='20' cols='55' name="email-body" id="email-body">Add your comments and questions here and a representative will contact you shortly.</textarea></li>
 		</ul>
 		<p>How would you prefer that we contact you?</p>
 		<p>Please check at least one below.</p>
 		<label for="pref-email">Contact Via Email</label>
 		<input tabfocus="6" type="checkbox" name="pref-email" id="pref-email">
+		<p></p>
 		<label for="pref-phone">Contact Via Phone Call</label>
 		<input tabfocus="7" type="checkbox" name="pref-phone" id="pref-phone">
 		<button tabfocus="8" type="submit" id="submit-button">Send Email</button>
