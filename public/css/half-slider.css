@@ -1,0 +1,381 @@
+/*
+ * Start Bootstrap - Half Slider (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: black;
+}
+
+body * {
+    font-family: "Halvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* You can change the height of the carousel by changing the height in the class below. It is set to 50% by default, but can be any height! */
+
+.carousel {
+    height: 80%;
+}
+
+
+.navbar-brand-logo {
+    margin-left: 40px !important;
+}
+
+.myClass {
+    color: orange;
+}
+
+.logo {
+    width: 40px;
+    height: 40px;
+    margin-top: -9px;
+    opacity: 0.6;
+}
+
+.logo:hover {
+    opacity: 1.0;
+}
+
+li {
+    font-size: 20px;
+}
+
+.navbar-nav {
+    float: right;
+    margin: 6px 20px 6px 0;
+}
+.navbar-nav, .brandName {
+    letter-spacing: 1px;
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: #333333;
+    font-size: 22px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: orange;
+}
+
+.navbar-header {
+    display: table;
+    margin: 6px 0;
+}
+
+.navbar-header li, .brandName {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.brandName a {
+    color: #9d9d9d;
+    text-transform: uppercase;
+}
+
+.brandName a:hover {
+    text-decoration: none;
+}
+
+.img-icons {
+    width: 222px;
+    height: 150px;
+    position: relative;
+}
+.s-class, .sl-class, .sls-class, .slk-class, .slr-class {
+    height: 180px; 
+    width: 222px;
+    background-color: #bcbfc6;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+}
+.s-class:hover, .sl-class:hover, .sls-class:hover, .slk-class:hover, .slr-class:hover {
+    background-color: #f5ac51;
+}
+
+
+.header-text {
+    text-align: center;
+    color: orange;
+}
+
+.h1-class {
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    bottom: 29px;
+    left: 14%;
+    letter-spacing: 1px;  
+}
+
+.sl-class h1 {
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    bottom: 29px;
+    left: 19%;
+}
+.price {
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    bottom: 6px;
+    left: 20%;
+}
+.container {
+    /*position: relative;*/
+    width: 100%;
+    text-align: center;
+}
+.item,
+.active,
+.carousel-inner {
+    height: 100%;
+}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+footer {
+    margin: 50px 0;
+}
+.somed {
+    background-image: url("../images/s-class-img-3.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+
+
+}
+.business-hours {
+    background: #222; 
+    padding: 40px 14px;
+    position: relative;
+}
+.bla {
+    color: red;
+}
+.business-hours:before {
+    content: '';
+    width: 23px;
+    height: 23px;
+    background: #111;
+    position: absolute;
+    top: 5px;
+    left: -12px;
+    transform: rotate(-45deg);
+    z-index: -1;
+}
+
+.business-hours .title {
+    font-size: 20px;
+    color: #BBB;
+    text-transform: uppercase;
+    padding-left: 5px;
+}
+
+.business-hours li {
+    color: #888;
+    line-height: 30px;
+    border-bottom: 1px solid #333; 
+}
+
+.business-hours li:last-child {
+    border-bottom: none; 
+}
+
+.business-hours .opening-hours li.today {
+    color: #ffac0c; 
+}
+
+.parallax {
+    background-image: url();
+}
+li {
+    text-align: left;
+}
+
+.m-icons {
+    margin-bottom: 39px;
+}
+
+.fa {
+    color: orange;
+    font-size: 40px;
+    display: inline-block;
+    bottom: 2px;
+
+}
+
+.copyright {
+    font-size: 14px;
+    color: white;
+/*    font-family: 'Raleway', sans-serif;
+*/}
+.contact-me {
+    font-size: 28px;
+    padding-top: 40px;
+    color: #888;
+}
+
+.row2 {
+    border-top: solid 0 #000000;
+}
+
+.row2 .col-md-4 {
+    height: 363px;
+    position: relative;
+}
+
+.media-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    letter-spacing: 4px;
+    padding-bottom: 40px;
+}
+
+.media-icons p {
+    letter-spacing: 1px;
+    font-size: 20px;
+    color: #888888;
+}
+
+.media-icons a .fa:hover, .team_member:hover {
+    -webkit-transition: all 1000ms ease-in;
+    -webkit-transform: scale(1.2);
+    -ms-transition: all 1000ms ease-in;
+    -ms-transform: scale(1.2);   
+    -moz-transition: all 1000ms ease-in;
+    -moz-transform: scale(1.2);
+    transition: all 1000ms ease-in;
+    transform: scale(1.2);
+}
+
+
+/*** OUR TEAM ***/
+
+.team {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.team * {
+    z-index: 9;
+    position: relative;
+}
+
+.team_member {
+    display: inline-block;
+    width: 15%;
+    margin: 2%;
+    position: relative;
+}
+
+.team_member img {
+    border-radius: 50%;
+    width: 100%;
+}
+.team_member img:hover {
+    border: 3px solid orange;
+
+}
+
+.logo_line {
+    padding-top: 10px;
+}
+
+.logo_line hr, .logo_line img {
+    display: inline-block;
+}
+
+.logo_line hr {
+    margin: 10px;
+}
+
+.logo_line img {
+    width: 30px;
+    height: auto;
+}
+
+
+#merspic {
+    position: absolute;
+    left: 0;
+    top: -20%;
+    opacity: 0.3;
+    width: 100%;
+    z-index: 7;
+}
+.team h1 {
+    color: #9d9d9d;
+}
+.title {
+    padding-bottom: 20px;
+    text-decoration: underline;
+    text-decoration-color: orange;
+}
+
+
+.team_member p {
+    font-size: 24px;
+    color: #FFFFFF;
+    padding-top: 10px;
+
+}
+
+/*
+
+.parallax {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-perspective: 1px;
+    perspective: 1px;
+  }
+
+  .parallax__layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .parallax__layer--base {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  .parallax__layer--back {
+    -webkit-transform: translateZ(-1px);
+    transform: translateZ(-1px);
+  }*/
+
+
+
+

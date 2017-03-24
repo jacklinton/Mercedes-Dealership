@@ -31,12 +31,31 @@ post '/' do
 		response = sg.client.mail._('send').post(request_body: mail.to_json)
 		puts response.status_code
 		puts response.body
+
+	erb :home
 	
 end
 
 
-get '/' do
-	
-	erb :index
+get	"/" do
 
+	@time = Time.now.strftime("%H").to_i
+
+	@myclass = "myClass"
+
+	erb :home
+end
+
+get	"/gallery" do
+	@time = Time.now.strftime("%H").to_i
+
+	@myclass = "myClass"
+	erb :gallery
+end
+
+get	"/contact_us" do
+	@time = Time.now.strftime("%H").to_i
+
+	@myclass = "myClass"
+	erb :contact
 end

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NYCDA Mercedes</title>
+    <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="/css/half-slider.css" rel="stylesheet">
+	<title></title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- <div class="container"> -->
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <!-- <div > -->
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-exam ple-navbar-collapse-1">
+            <ul class="navbar-header">
+                <li>
+                    <a class="navbar-brand" href="/"><img class="logo" src="images/mers-logo.png"></a>
+                </li>
+                    <div class="brandName">
+                    <a href="/">NYCDA Mercedes</a>
+                </div>
+                <li>
+                    
+                </li>
+            </ul>
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/gallery">Gallery</a>
+                    </li>
+                    <li>
+                        <a href="/contact_us">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+<%= yield %>
+
+
+
+        <footer>
+
+        <div class="row2">
+              <div class="col-md-4">
+                <div class="business-hours">
+                  <h2 class="title">Business Hours</h2>
+                  <ul class="list-unstyled opening-hours">
+                  <li>Sunday <span class="pull-right">Closed</span></li>
+                  <li>Monday <span class=" <%= @myclass if Time.now.strftime("%A").to_s == "Monday" %> pull-right"><%= @time > 9 && @time < 18 ? "9:00-18:00" : "Closed" %></span></li>
+                  <li>Tuesday <span class=" <%= @myclass if Time.now.strftime("%A").to_s == "Tuesday" %> pull-right"><%= @time > 9 && @time < 18 ? "9:00-18:00" : "Closed" %></span></li>
+                  <li>Wednesday <span class=" <%= @myclass if Time.now.strftime("%A").to_s == "wWdnesday" %> pull-right"><%= @time > 9 && @time < 18 ? "9:00-18:00" : "Closed" %></span></li>
+                  <li>Thursday <span class=" <%= @myclass if Time.now.strftime("%A").to_s == "Thursday" %> pull-right"><%= @time > 9 && @time < 18 ? "9:00-18:00" : "Closed" %></span></li>
+                  <li>Friday <span class=" <%= @myclass if Time.now.strftime("%A").to_s == "Friday" %> pull-right"><%= @time > 9 && @time < 17 ? "9:00-18:00" : "Closed" %></span></li>
+
+
+                  <li>Saturday <span class=" <%= @myclass if Time.now.strftime("%A").to_s == "Saturday" %> pull-right"><%= @time > 9 && @time < 15 ? "9:00-15:00" : "Closed" %></span></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-4">
+                  <p class="contact-me">Contact us to make an appointment<br><span class="num">+1800-</span><span class="my_number">MY-DREAM</span><br></p>
+                  <div class="media-icons">
+                    <p>Share your experience with your friends</p>
+                    <a href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    <a href="http://www.instagram.com"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="http://www.twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="http://www.pinterest.com"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                    <a href="http://www.youtube.com"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                  <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.349246427535!2d-75.16910608463516!3d39.95594367942141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6c63272af5183%3A0xf7ea31c96808d6a0!2sNYCDA+Mercedes!5e0!3m2!1sen!2sus!4v1486758155653" width="600" height="363" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+        </div>  
+
+
+
+        <hr>
+
+        <!-- Footer -->
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright &copy; Jack_Ashot_John_Soham</p>
+                </div>
+            <!-- /.row -->
+
+    </div>
+        </footer>
+            <script src="/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Script to Activate the Carousel -->
+    <script>
+    $('.carousel').carousel({
+        interval: 3000 //changes the speed
+    })
+    </script>
+
+    <script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
