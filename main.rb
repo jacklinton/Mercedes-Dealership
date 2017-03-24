@@ -53,5 +53,12 @@ get	"/about_us" do
 end
 
 get	"/contact_us" do
+	@time = Time.now.strftime("%H").to_i
+
+	@myclass = "myClass"
 	erb :contact
+end
+
+get "/index" do
+	erb :index
 end
