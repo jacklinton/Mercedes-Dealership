@@ -31,6 +31,8 @@ post '/' do
 		response = sg.client.mail._('send').post(request_body: mail.to_json)
 		puts response.status_code
 		puts response.body
+
+	erb :home
 	
 end
 
@@ -45,11 +47,10 @@ get	"/" do
 end
 
 get	"/gallery" do
-	erb :gallery
-end
+	@time = Time.now.strftime("%H").to_i
 
-get	"/about_us" do
-	erb :about
+	@myclass = "myClass"
+	erb :gallery
 end
 
 get	"/contact_us" do
@@ -57,8 +58,4 @@ get	"/contact_us" do
 
 	@myclass = "myClass"
 	erb :contact
-end
-
-get "/index" do
-	erb :index
 end
