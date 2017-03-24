@@ -35,8 +35,23 @@ post '/' do
 end
 
 
-get '/' do
-	
-	erb :index
+get	"/" do
 
+	@time = Time.now.strftime("%H").to_i
+
+	@myclass = "myClass"
+
+	erb :home
+end
+
+get	"/gallery" do
+	erb :gallery
+end
+
+get	"/about_us" do
+	erb :about
+end
+
+get	"/contact_us" do
+	erb :contact
 end
